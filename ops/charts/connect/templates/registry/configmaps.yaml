@@ -31,4 +31,4 @@ data:
       {{- end }}
       {{- end }}
       edgePorts:
-        - address: {{ .Release.Name }}-routr-edgeport.{{ .Release.Namespace }}:5060
+        - address: {{ .Release.Name }}-routr-edgeport-udp.{{ .Release.Namespace }}:5060
