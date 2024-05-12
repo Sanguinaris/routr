@@ -15,6 +15,7 @@ metadata:
 spec:
   type: {{ .Values.edgeport.serviceTypeUDP }}
   externalTrafficPolicy: {{ .Values.edgeport.externalTrafficPolicyUDP }}
+  ipFamilyPolicy: {{ .Values.edgeport.ipFamilyPolicy }}
   ports:
   - name: sipudp
     protocol: UDP

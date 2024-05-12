@@ -15,6 +15,7 @@ metadata:
 spec:
   type: {{ .Values.edgeport.serviceTypeTCP }}
   externalTrafficPolicy: {{ .Values.edgeport.externalTrafficPolicyTCP }}
+  ipFamilyPolicy: {{ .Values.edgeport.ipFamilyPolicy }}
   ports:
   {{- if .Values.edgeport.transport.tcp.enabled }}
     - name: siptcp

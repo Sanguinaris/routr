@@ -38,6 +38,7 @@ edgeport:
     pullPolicy: IfNotPresent
   # Pod annotations
   podAnnotations: {}
+  ipFamilyPolicy: SingleStack
   # Service annotations for TCP
   serviceAnnotationsTCP: {}
   # Service annotations for UDP
